@@ -11,8 +11,11 @@ jobs:
       - name: Print Operating System (Client)
         run: uname -a
 
+      - name: Install Vue CLI
+        run: npm install -g @vue/cli
+
       - name: Print Web Framework (Vue.js)
-        run: npx vue --version
+        run: vue --version
 
       - name: Print Node.js Version (Server)
         run: node --version
